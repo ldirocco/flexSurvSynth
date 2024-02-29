@@ -4,7 +4,7 @@ library(synthpop)
 library(flexsurv)
 library(synthpop)
 
-flexSurvSynth=function(input_data,time_column,event_colum,period_column,dropout_column,covariates,k,knots,n,censtime){
+fleSSy=function(input_data,time_column,event_colum,period_column,dropout_column,covariates,k,knots,n,censtime){
   selected_cols=c(time_column,event_column,covariates,period_column,dropout_column)
   print(selected_cols)
   data_to_process=input_data[selected_cols]
